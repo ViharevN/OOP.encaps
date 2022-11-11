@@ -11,7 +11,7 @@ public class Human {
         } else {
             this.name = name;
         }
-        if (yearOfBirth < 0) {
+        if (yearOfBirth == null || yearOfBirth < 0) {
             this.yearOfBirth = 0;
         } else {
             this.yearOfBirth = yearOfBirth;
