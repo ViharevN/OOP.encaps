@@ -1,5 +1,3 @@
-import java.util.Arrays;
-
 public class Flower {
     private String name;
     private String flowerColor;//цвет цветка
@@ -79,11 +77,15 @@ public class Flower {
 
     static Double getBouquet(Flower[] flowers) {
         double sum = 0;
+        int min = flowers[0].lifeSpan;
         for (int i = 0; i < flowers.length; i++) {
             sum = sum + flowers[i].getCost();
+            if (min > flowers[i].lifeSpan) {
+                min = flowers[i].lifeSpan;
+            }
         }
         sum = sum + sum * 0.1;
-        return sum ;
+        return sum;
     }
 
     static Integer getLifeSpanBouquet(Flower[] flowers) {

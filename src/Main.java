@@ -41,8 +41,8 @@ public class Main {
         bouquet[7] = chrysanthemum;
         bouquet[8] = gypsophila;
 
-        System.out.printf("Стоимость букета равна: " + "%.2f",  Flower.getBouquet(bouquet));
-        System.out.println(" Букет простоит: " + Flower.getLifeSpanBouquet(bouquet));
+        System.out.printf("Стоимость букета равна: " + "%.2f",  Flower.getBouquet(bouquet), Flower.getLifeSpanBouquet(bouquet));
+
 
 
     }
